@@ -25,6 +25,10 @@
     color: white;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 header{
     position: fixed; /* mantiene el header fijo en la pantalla */
@@ -314,11 +318,11 @@ section{
         display: block;
     }
 
-    #menu-toggle:checked + label.menu-icon-action + .navlist{
-        right: 0px;
+    .about{
+        grid-template-columns: 1fr; 
     }
 
-    .about{
-        grid-template-columns: 1fr;
+    .navlist.open{
+        right: 0;
     }
 }
